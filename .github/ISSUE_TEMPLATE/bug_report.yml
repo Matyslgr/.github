@@ -65,10 +65,10 @@ body:
         - Potential workarounds you've tried
 
   - type: checkboxes
-      id: project_compliance
-      attributes:
-        label: 📂 Project Metadata (if applicable)
-        description: >
-          If this issue will be linked to a GitHub Project board, please confirm that you will fill in the required project fields.
-        options:
-          - label: I confirm that I will fill in the required fields in the linked GitHub Project, if applicable.
+    id: project_compliance
+    attributes:
+      label: 📂 Project Metadata (if applicable)
+      description: >
+        If this issue will be linked to a GitHub Project board, please confirm that you will fill in the required project fields.
+      options:
+        - label: I confirm that I will fill in the required fields in the linked GitHub Project, if applicable.
