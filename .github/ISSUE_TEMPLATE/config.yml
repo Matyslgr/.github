@@ -5,8 +5,3 @@ issue_templates:
     description: Suggest a new idea or enhancement.
     labels: [feature, enhancement]
     file: feature_request.yml
-
-  - name: 🐛 Bug Report
-    description: Report a bug or unexpected behavior.
-    labels: [bug]
-    file: bug_report.yml
