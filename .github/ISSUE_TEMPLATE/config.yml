@@ -1,0 +1,22 @@
+blank_issues_enabled: true
+
+issue_templates:
+  - name: 📌 Feature Request
+    description: Suggest a new idea or enhancement.
+    labels: [feature, enhancement]
+    file: feature_request.yml
+
+  - name: 🐛 Bug Report
+    description: Report a bug or unexpected behavior.
+    labels: [bug]
+    file: bug_report.yml
+
+  - name: 🧹 Refactor Request
+    description: Suggest a refactor or improvement of existing code.
+    labels: [refactor]
+    file: refactor_request.yml
+
+  - name: ❓ Question
+    description: Ask a question or seek clarification.
+    labels: [question]
+    file: question.yml
