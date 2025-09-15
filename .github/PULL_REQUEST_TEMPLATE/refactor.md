@@ -21,6 +21,7 @@
 ## 🔗 Related issues
 
 - Related to #
+- Closes #
 
 ## 👥 Reviewers
 
