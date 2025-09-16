@@ -1,7 +1,8 @@
 name: 📌 Feature Request
 description: Suggest a new idea, improvement, or enhancement.
 title: "[FEATURE] : "
-type: Feature
+labels: ["enhancement", "feature"]
+assignees: []
 
 body:
   - type: markdown
@@ -22,49 +23,53 @@ body:
   - type: textarea
     id: goal
     attributes:
-      label: 🎯 Goal
-      description:
-        Clearly state the purpose of this feature and the value it brings.
-        Focus on the desired outcome rather than implementation details.
+      label: 🎯 Feature Goal
+      description: What problem does this feature solve, or what value does it add?
       placeholder: |
-        - What is the intended outcome of this feature?
+        - What is the goal of this feature?
         - Who benefits from it and how?
-        - What problem does it solve, or what opportunity does it create?
-    validations:
-      required: true
+      validations:
+        required: true
 
   - type: textarea
-    id: steps
+    id: approach
     attributes:
-      label: ✅ Technical Steps
-      description:
-        Break down the technical steps required to implement the feature.
-        Focus on logic, modules, services, or components involved. Use bullet points or numbered steps.
+      label: 🛠️ Suggested Implementation (optional)
+      description: Optionally describe how this could be implemented, or leave it to the development team.
       placeholder: |
-        - Step 1: Identify the modules or files that need to be modified
-        - Step 2: Implement the necessary changes in the codebase
-        - Step 3: Write integration/unit tests
-        - Step 4: Update the documentation to reflect the new feature
-    validations:
-      required: false
+        - High-level technical suggestion
+        - Related components / modules
+        - API or UX changes (if any)
+
+  - type: dropdown
+    id: tests_needed
+    attributes:
+      label: 🧪 Are tests required for this feature?
+      description: Indicate whether the feature should be covered by tests.
+      options:
+        - Yes
+        - No
+        - Not sure
+      validations:
+        required: true
 
   - type: textarea
-    id: tests
+    id: test_cases
     attributes:
-      label: 🧪 Test Cases
-      description: Describe how this feature will be tested. List realistic and meaningful test cases that cover expected behaviors, edge cases, and failure conditions.
+      label: ✅ If "Yes", what tests should be written?
+      description: |
+        Only fill this section if you selected "Yes" above.
+        Provide test case ideas or describe expected behaviors to cover.
       placeholder: |
-        - Test Case 1: Describe the first test case
-        - Test Case 2: Describe the second test case
-        - Test Case 3: Describe the third test case
-    validations:
-      required: true
+        - Input validation scenarios
+        - Edge cases
+        - Integration points
+        - Example expected behaviors
 
   - type: checkboxes
-    id: project_compliance
+    id: project_metadata
     attributes:
-      label: ✅ Project Integration
-      description: Confirm that this issue includes the required project metadata.
+      label: 📂 Project Metadata (if applicable)
+      description: If linked to a GitHub Project board, confirm metadata will be filled.
       options:
-        - label: I confirm that I have filled in all required fields in the GitHub Project (e.g. Priority, Status, Size, etc.)
-          required: true
+        - label: I confirm that I will fill in the required fields in the linked GitHub Project, if applicable.

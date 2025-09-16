@@ -2,7 +2,7 @@ name: 🧹 Refactor Request
 description: Suggest a refactor or improvement of existing code.
 title: "[REFACTOR] : "
 labels: ["refactor"]
-type: Refactor
+assignees: []
 
 body:
   - type: markdown
