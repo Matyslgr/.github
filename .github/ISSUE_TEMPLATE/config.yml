@@ -16,3 +16,7 @@ issue_templates:
   - name: ❓ Question
     description: Ask a question or request clarification.
     file: question.yml
+
+  - name: 🗂️ Epic
+    description: A large task or project that groups multiple related issues.
+    file: epic.yml
