@@ -31,8 +31,8 @@ body:
         - Technical debt or poor design patterns detected
         - Code smells or hard-to-test logic
         - Problems encountered during development or review
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: objective
@@ -44,8 +44,8 @@ body:
         - Separate concerns
         - Reduce cyclomatic complexity
         - Improve readability or performance
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: approach
@@ -57,8 +57,6 @@ body:
         - Split large functions
         - Introduce a design pattern (e.g., strategy, adapter)
         - Replace a legacy library
-      validations:
-        required: false
 
   - type: dropdown
     id: functional_change
@@ -69,8 +67,8 @@ body:
         - No, purely internal refactor
         - Yes, it slightly affects behavior (explain below)
         - Not sure
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: side_effects
@@ -81,8 +79,6 @@ body:
         - Minor changes in error handling
         - Changes in response shape
         - Performance impact
-      validations:
-        required: false
 
   - type: dropdown
     id: tests_needed
@@ -93,8 +89,8 @@ body:
         - No, existing tests cover this
         - Yes, new or updated tests required
         - Not sure
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: test_cases
@@ -105,8 +101,6 @@ body:
         - Unit tests for helper functions
         - Integration test for the updated flow
         - Regression test for previous bugs
-      validations:
-        required: false
 
   - type: checkboxes
     id: project_metadata

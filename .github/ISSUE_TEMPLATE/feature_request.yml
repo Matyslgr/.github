@@ -28,8 +28,8 @@ body:
       placeholder: |
         - What is the goal of this feature?
         - Who benefits from it and how?
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: approach
@@ -47,11 +47,11 @@ body:
       label: 🧪 Are tests required for this feature?
       description: Indicate whether the feature should be covered by tests.
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Not sure
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: test_cases
