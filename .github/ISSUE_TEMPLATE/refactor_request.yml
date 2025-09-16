@@ -3,6 +3,7 @@ description: Suggest a refactor or improvement of existing code.
 title: "[REFACTOR] : "
 labels: ["refactor"]
 assignees: []
+type: "Refactor"
 
 body:
   - type: markdown
