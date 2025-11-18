@@ -1,4 +1,4 @@
-# Contributing to Epiteam-Mtp
+# Contributing
 
 First of all, thank you for considering contributing to our projects!
 By participating, you help us improve code quality, documentation, and workflows.
@@ -97,9 +97,9 @@ Examples:
 ---
 
 ## Workflow
-- Create a branch from `main` or `develop`.
+- Create a branch from `main` or `dev`.
 - Push changes to your branch.
-- Open a Pull Request targeting `main` or `develop`.
+- Open a Pull Request targeting `main` or `dev`.
 - Request reviews and address feedback before merging.
 - Delete your branch after merge.
 
@@ -108,7 +108,6 @@ Examples:
 ## Additional Resources
 - [GitHub Docs](https://docs.github.com/en)
 - [GitHub Flow](https://guides.github.com/introduction/flow/)
-- [Code Style Guides](https://github.com/airbnb/javascript) (example for JS)
 
 ---
 
