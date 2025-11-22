@@ -1,0 +1,36 @@
+name: 🔄 Epitech Mirroring System
+
+on:
+  workflow_call:
+    inputs:
+      mirror_url:
+        required: true
+        type: string
+        description: "SSH URL of the target mirror repository"
+    secrets:
+      GIT_SSH_PRIVATE_KEY:
+        required: true
+        description: "The private SSH key for pushing"
+
+jobs:
+  mirror-to-epitech:
+    name: 🚀 Push to Mirror
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'Matyslgr'
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 📝 Debug Info
+        run: |
+          echo "Syncing branch: $(git rev-parse --abbrev-ref HEAD)"
+          echo "Target URL: ${{ inputs.mirror_url }}"
+
+      - name: 🔄 Mirroring Action
+        uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url: ${{ inputs.mirror_url }}
+          ssh_private_key: ${{ secrets.GIT_SSH_PRIVATE_KEY }}
