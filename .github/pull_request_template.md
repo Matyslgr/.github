@@ -5,19 +5,16 @@
 
 ---
 
-## 📄 Type of Change
+## 📝 Type of Change
 
 <!-- Select one or more by replacing [ ] with [x] -->
 
-- [ ] 🐛 Bug Fix
-- [ ] ✨ New Feature
-- [ ] 🧹 Code Refactor
-- [ ] 🔥 Hotfix
-- [ ] 📚 Documentation
-- [ ] 🚧 Work In Progress
-- [ ] ✅ Tests Only
-- [ ] 🔧 Chore (tooling, CI, infra, etc.)
-- [ ] Other: <!-- specify -->
+- [ ] 🐛 **Bug fix** (non-breaking change which fixes an issue)
+- [ ] ✨ **New feature** (non-breaking change which adds functionality)
+- [ ] 💥 **Breaking change** (fix or feature that would cause existing functionality to not work as expected)
+- [ ] 🧹 **Refactor** (code improvement without functional change)
+- [ ] 📚 **Documentation** (updates to documentation only)
+- [ ] 🤖 **CI/CD** (changes to workflows, deployment scripts, or tooling)
 
 ---
 
@@ -32,14 +29,31 @@
 
 ---
 
-## 📎 Related Issues / PRs
+## 🧪 How Has This Been Tested?
 
-<!-- Link issues or other PRs here using GitHub keywords to enable automation -->
+- [ ] **Manual Verification**:
+     1. Run command: ...
+     2. Navigate to: ...
+     3. Expected result: ...
+
+- [ ] **Automated Tests**:
+     - [ ] Unit tests
+     - [ ] Integration tests
+     - [ ] End-to-end tests
+     - [ ] Other: ...
+
+---
+
+## 📸 Screenshots (if applicable)
+| Before | After |
+| ------ | ----- |
+| [Image or Log] | [Image or Log] |
+
+---
+
+## 📎 Related Issues
+
+<!-- Link issues here using GitHub keywords to enable automation -->
 
 - Closes #...
 - Fixes #...
-- Related to #...
-
-## 👥 Reviewers
-
-@mentions of the person or team responsible for reviewing proposed changes

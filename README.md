@@ -1,80 +1,69 @@
-# 📦 Global GitHub Templates
+# 🛠️ Global GitHub Configuration
 
-This repository contains global configuration files and templates that apply to all repositories under the **@Matyslgr** GitHub account.
+This repository serves as the central hub for **Community Health Files** and **Issue/PR Templates** for all projects under the **@Matyslgr** account.
 
-It is used to standardize and streamline workflows across all personal and organizational projects.
-
----
-
-## 📁 Contents
-
-### 1. 🔖 Issue Templates (`.github/ISSUE_TEMPLATE/`)
-
-Reusable issue templates to encourage structured contributions.
-
-| Template              | Purpose                                                 |
-|-----------------------|---------------------------------------------------------|
-| `bug_report.yaml`     | Report a bug with steps to reproduce and context        |
-| `feature_request.yaml`| Propose a new feature or improvement                    |
-| `refactor_request.yaml` | Suggest internal code improvements / restructuring     |
-| `hotfix_request.yaml` | Submit critical fixes for urgent production issues      |
-
-➡️ All templates include support for GitHub Project metadata when applicable.
-
-### 2. 🚀 Pull Request Templates (`.github/PULL_REQUEST_TEMPLATE/`)
-
-Modular pull request templates tailored for different types of changes:
-
-| Template         | Purpose                          |
-|------------------|----------------------------------|
-| `bug.md`         | Fixing a bug                     |
-| `feature.md`     | Implementing a new feature       |
-| `refactor.md`    | Structural or non-functional changes |
-| `hotfix.md`      | Urgent fix, often for production issues |
-
-> To use these, PR creators simply select the appropriate template when opening a pull request.
-
-### 3. 🛠️ Repository Configuration (`config.yml`)
-
-Central configuration for issue template UI (menu)
-Located at: `.github/ISSUE_TEMPLATE/config.yml`
+It utilizes GitHub's **default community health file** mechanism. Any repository created under this account automatically inherits these standards unless explicitly overridden, ensuring consistency, security, and professionalism across the entire portfolio.
 
 ---
 
-## 📌 Usage
+## 🛡️ Governance & Community
 
-These templates are automatically applied to all repositories that **do not override them with their own local `.github/` folder**.
+These files define the rules of engagement, security protocols, and onboarding processes for contributors.
 
-You can override any template in a specific repository by creating a local `.github/ISSUE_TEMPLATE/` or `.github/PULL_REQUEST_TEMPLATE/`.
-
----
-
-## 🤖 Coming Soon (optional)
-
-Planned additions:
-
-- ✅ GitHub Actions for automatic labeling and project linking
-- 📄 Contributor guidelines and security policy templates
-- 🚨 Issue auto-triage based on labels and title analysis
+| File | Description |
+| :--- | :--- |
+| [**CONTRIBUTING.md**](CONTRIBUTING.md) | The technical onboarding guide. Explains the branching strategy, commit conventions (Conventional Commits), and how to run tests. |
+| [**CODE_OF_CONDUCT.md**](CODE_OF_CONDUCT.md) | Enforces a safe environment. Based on the **Contributor Covenant v3.0**. |
+| [**SECURITY.md**](SECURITY.md) | Defines the Responsible Disclosure policy and how to report vulnerabilities privately. |
+| [**SUPPORT.md**](SUPPORT.md) | Guiding users to the right support channels (Discussions, Email) to keep Issues clean. |
 
 ---
 
-## 🧪 Maintainer Notes
+## 📝 Issue Tracking (Forms)
 
-This repository is maintained manually. To update or test changes:
+We use **YAML-based GitHub Issue Forms** to enforce structured data entry. This ensures every issue contains the necessary context (reproduction steps, environment, etc.) before submission.
 
-1. Make the changes here
-2. Push to `main`
-3. Verify template propagation on a fresh test repo
-
----
-
-## 📎 References
-
-- [GitHub: Managing a .github repository](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)
-- [GitHub Issue Forms](https://docs.github.com/en/issues/using-issues/configuring-issue-templates-for-your-repository)
-- [GitHub PR Templates](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-request-templates)
+| Template | Type | Purpose |
+| :--- | :--- | :--- |
+| [**Bug Report**](.github/ISSUE_TEMPLATE/bug_report.yml) | `bug_report.yml` | Standardized form for reporting errors, requiring logs and environment details. |
+| [**Feature Request**](.github/ISSUE_TEMPLATE/feature_request.yml) | `feature_request.yml` | Focuses on the "Problem Statement" vs "Proposed Solution" separation. |
+| [**Refactor Request**](.github/ISSUE_TEMPLATE/refactor_request.yml) | `refactor_request.yml` | For proposing code cleanups. Requires ROI justification and risk analysis. |
+| [**Epic**](.github/ISSUE_TEMPLATE/epic.yml) | `epic.yml` | For tracking high-level initiatives and managing sub-tasks via Task Lists. |
+| [**Question**](.github/ISSUE_TEMPLATE/question.yml) | `question.yml` | Simple form for clarifications and Q&A. |
 
 ---
 
-Maintained by [@MatysLgr](https://github.com/MatysLgr)
+## 🚀 Code Review & Merging
+
+We use a unified, comprehensive template for all Pull Requests to ensure quality control before merging.
+
+### [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md)
+Located at `.github/PULL_REQUEST_TEMPLATE.md`, it enforces:
+* **Context:** Linking to related issues (Fixes #...).
+* **Type of Change:** Visual classification (Bug, Feature, Refactor...).
+* **Testing Proof:** Explicit instructions on how the reviewer can verify the changes (Manual or Automated).
+* **Self-Review Checklist:** Ensures linting, commenting, and no regressions.
+
+---
+
+## 📚 Developer Resources
+
+This repository also contains templates intended for **manual use** in specific projects (not inherited automatically).
+
+| File | Purpose | Location |
+| :--- | :--- | :--- |
+| **CITATION.cff** | Template for academic citations. Copy to project root if needed. | [`templates/CITATION.cff`](templates/CITATION.cff) |
+
+---
+
+## ⚡ How It Works
+
+GitHub checks for community health files in the following order:
+1.  In the specific repository's `.github/` directory.
+2.  **In this repository** (the fallback).
+
+This allows specific projects to override these defaults if necessary, while maintaining a strong baseline for all others.
+
+---
+
+_Maintained by [@MatysLgr](https://github.com/MatysLgr)_

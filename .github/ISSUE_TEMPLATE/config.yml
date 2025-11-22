@@ -20,3 +20,8 @@ issue_templates:
   - name: 🗂️ Epic
     description: A large task or project that groups multiple related issues.
     file: epic.yml
+
+contact_links:
+  - name: 🔐 Report a Security Vulnerability
+    url: https://github.com/Matyslgr/.github/security/advisories/new
+    about: Please do not report security vulnerabilities in public issues.

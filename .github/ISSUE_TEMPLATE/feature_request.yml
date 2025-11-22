@@ -8,8 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to propose a new feature!
-        Please fill out the form below to help us understand your idea.
+        Thanks for your interest in improving the project!
 
   - type: checkboxes
     id: prerequisites
@@ -21,55 +20,63 @@ body:
           required: true
 
   - type: textarea
-    id: goal
+    id: problem
     attributes:
-      label: 🎯 Feature Goal
-      description: What problem does this feature solve, or what value does it add?
+      label: 😫 Problem Statement
+      description: Is your feature request related to a problem? Please describe.
       placeholder: |
-        - What is the goal of this feature?
-        - Who benefits from it and how?
+        - "I'm frustrated when..."
+        - "I cannot achieve X because..."
+        - "The current workflow is too slow when..."
     validations:
       required: true
 
   - type: textarea
-    id: approach
+    id: solution
     attributes:
-      label: 🛠️ Suggested Implementation (optional)
-      description: Optionally describe how this could be implemented, or leave it to the development team.
+      label: 💡 Proposed Solution
+      description: Describe the solution you'd like to see.
       placeholder: |
-        - High-level technical suggestion
-        - Related components / modules
-        - API or UX changes (if any)
-
-  - type: dropdown
-    id: tests_needed
-    attributes:
-      label: 🧪 Are tests required for this feature?
-      description: Indicate whether the feature should be covered by tests.
-      options:
-        - "Yes"
-        - "No"
-        - Not sure
+        - "It would be great if..."
+        - "The system should allow users to..."
     validations:
       required: true
 
   - type: textarea
-    id: test_cases
+    id: alternatives
     attributes:
-      label: ✅ If "Yes", what tests should be written?
-      description: |
-        Only fill this section if you selected "Yes" above.
-        Provide test case ideas or describe expected behaviors to cover.
+      label: 🔄 Alternatives Considered (Optional)
+      description: Have you considered other ways to solve this?
       placeholder: |
-        - Input validation scenarios
-        - Edge cases
-        - Integration points
-        - Example expected behaviors
+        - "I thought about doing X, but Y seems better because..."
+        - "Using an external library instead of building this..."
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: ✅ Acceptance Criteria
+      description: What must happen for this feature to be considered "done"?
+      placeholder: |
+        - User can click button X and see modal Y.
+        - The API returns a 200 OK with the new data structure.
+        - The algorithm handles negative inputs gracefully.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 🛠️ Technical Implementation (Optional)
+      description: If you have technical ideas on how to build this (modules, algorithms, classes).
+      placeholder: |
+        - Modify the `AuthService` to include...
+        - Add a new generic class T...
+        - Update the database schema to store...
 
   - type: checkboxes
     id: project_metadata
     attributes:
-      label: 📂 Project Metadata (if applicable)
+      label: 📂 Project Management (if applicable)
       description: If linked to a GitHub Project board, confirm metadata will be filled.
       options:
         - label: I confirm that I will fill in the required fields in the linked GitHub Project, if applicable.

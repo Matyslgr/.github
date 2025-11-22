@@ -1,5 +1,5 @@
 name: 🐛 Bug Report
-description: Report a bug or issue with the project.
+description: Report a bug or an issue to help us improve the project.
 title: "[BUG] : "
 labels: ["bug"]
 assignees: []
@@ -8,67 +8,67 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to report a bug!
-        Please fill out the form below with **detailed information** to help us understand and reproduce the issue.
+        Thanks for reporting a bug! Please provide as much detail as possible to help us solve it.
 
   - type: checkboxes
     id: prerequisites
     attributes:
       label: 📋 Prerequisites
-      description: Please confirm you have completed these steps before submitting
       options:
-        - label: I have searched existing issues to avoid duplicates
+        - label: I have checked existing issues to avoid duplicates.
           required: true
-        - label: I have updated to the latest version / branch before reporting
+        - label: I am running the latest version of the code.
           required: true
 
   - type: textarea
     id: description
     attributes:
       label: 📝 Description
-      description: >
-        Provide a clear and comprehensive description of the bug.
-        Include context about what you were doing, what you expected, and what actually happened.
+      description: Describe the bug and the expected behavior.
       placeholder: |
-        - What were you trying to accomplish?
-        - What did you expect to happen?
-        - What actually happened?
-        - Any error messages or unusual behavior observed?
+        - Current behavior: (What actually happened?)
+        - Expected behavior: (What did you expect to happen?)
+        - Context: (What were you trying to achieve?)
     validations:
       required: true
 
   - type: textarea
-    id: steps
+    id: reproduction
     attributes:
-      label: 🔍 Steps to Reproduce
-      description: >
-        List the steps to reproduce the bug.
-        Include any specific configurations or settings that are relevant.
+      label: 🔄 Steps to Reproduce
+      description: Steps to reproduce the behavior (commands, inputs, or actions).
       placeholder: |
-        1. Step one
-        2. Step two
-        3. Step three
+        1. Run command/script '...' or Go to '...'
+        2. With input/arguments '...'
+        3. Trigger action '...'
+        4. See error
     validations:
       required: true
 
   - type: textarea
-    id: additional_context
+    id: environment
     attributes:
-      label: 📎 Additional Context
-      description: >
-        Add any other context, screenshots, logs, or files that might help.
-        Include links to related issues or relevant documentation.
+      label: 💻 Environment / Context
+      description: Critical for debugging. Please specify your setup.
       placeholder: |
-        - Screenshots or screen recordings
-        - Log files or error traces
-        - Configuration files (remove sensitive data)
-        - Related issues or PRs
-        - Potential workarounds you've tried
+        - OS: [e.g. Windows 11, Ubuntu 22.04, macOS Sonoma]
+        - Language/Runtime: [e.g. Node 18, Python 3.10, GCC 11]
+        - Browser (if web): [e.g. Chrome 120, Firefox, Safari]
+        - Version: [e.g. v1.0.2]
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📜 Logs / Error Output
+      description: Paste any relevant logs, stack traces, or screenshots.
+      render: shell
 
   - type: checkboxes
     id: project_metadata
     attributes:
-      label: 📂 Project Metadata (if applicable)
+      label: 📂 Project Management (if applicable)
       description: If linked to a GitHub Project board, confirm metadata will be filled.
       options:
         - label: I confirm that I will fill in the required fields in the linked GitHub Project, if applicable.

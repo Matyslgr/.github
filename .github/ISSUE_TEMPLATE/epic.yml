@@ -1,5 +1,5 @@
-name: 🗂️ Epic
-description: A large task or project that groups multiple related issues.
+name: 🚀 Epic
+description: A large initiative or project milestone that groups multiple related issues.
 title: "[EPIC] : "
 labels: ["epic"]
 assignees: []
@@ -8,36 +8,36 @@ body:
   - type: markdown
     attributes:
       value: |
-        This Epic represents a large feature or project that is broken down into multiple smaller issues.
-        Use this issue to track overall progress and link related sub-issues.
+        ### 🎯 Epic Tracking
+        This issue tracks a high-level goal.
+        Use the **Task List** below to:
+        - Link existing child issues using `#issue_number`.
+        - List new tasks (you can convert them to issues later by hovering over the line).
 
   - type: textarea
     id: objective
     attributes:
-      label: 🎯 Epic Objective
-      description: Describe the main goal of this Epic. What is the big feature or outcome you want to achieve?
+      label: 🎯 Objective
+      description: What is the high-level goal of this Epic?
       placeholder: |
-        - What problem or opportunity does this Epic address?
-        - What value will it deliver?
+        - Implement the core logic for the data processing module.
+        - Refactor the legacy system to improve performance.
+        - Prepare the Release Candidate for v1.0.
     validations:
       required: true
 
   - type: textarea
-    id: scope
+    id: tasks
     attributes:
-      label: 📦 Scope
-      description: Define the scope of this Epic. List the main tasks or sub-issues it will include.
+      label: 🔨 Child Issues / Tasks
+      description: >
+        Link sub-tasks here. GitHub will automatically track progress based on checkboxes.
       placeholder: |
-        - Task 1: ...
-        - Task 2: ...
-        - Task 3: ...
+        - [ ] Define the software architecture
+        - [ ] #42 (Link to an existing tracking issue)
+        - [ ] Implement the main algorithm
+        - [ ] Write documentation and unit tests
+      value: |
+        - [ ]
     validations:
       required: true
-
-  - type: checkboxes
-    id: project_metadata
-    attributes:
-      label: 📂 Project Metadata (if applicable)
-      description: If linked to a GitHub Project board, confirm metadata will be filled.
-      options:
-        - label: I confirm that I will fill in the required fields in the linked GitHub Project, if applicable.

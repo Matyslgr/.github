@@ -2,53 +2,56 @@
 
 ## 📬 Reporting a Vulnerability
 
-If you discover a security vulnerability in this project, **please do not open a public issue**.
+We take the security of our software seriously. If you believe you have found a security vulnerability in this project, please report it to us as described below.
 
-Instead, contact us **privately and responsibly**:
+**Please do not report security vulnerabilities through public GitHub issues.**
 
-- 📧 Email: `matys.laguerre@epitech.eu`
-- 📦 PGP Key (if applicable): [link or attach .asc file]
-- ⏱️ Expected response time: *within 2 business days*
+Instead, contact the maintainers **privately and responsibly**:
 
-We appreciate responsible disclosure and will work with you to address any issue as quickly as possible.
+- 📧 **Email**: `matys.laguerre@epitech.eu`
+- ⏱️ **Expected Response Time**: Within **48 hours**.
+
+### What to Include in Your Report
+
+To help us triage and fix the issue efficiently, please include:
+1. **Description**: A clear summary of the vulnerability.
+2. **Proof of Concept (PoC)**: Steps to reproduce the issue (scripts, screenshots, or commands).
+3. **Impact**: What data or functionality is compromised?
+4. **Environment**: OS, browser, or runtime version where the issue occurs.
 
 ---
 
 ## ✅ Supported Versions
 
-We currently support the following versions for security updates:
+Only the latest version of the project is officially supported with security updates.
 
-| Version | Status     | Notes                      |
-|---------|------------|----------------------------|
-| `1.x`   | ✅ Supported | Latest stable release      |
-| `<1.0`  | ❌ Unsupported | Use at your own risk      |
+| Version | Supported          | Notes                      |
+| :------ | :----------------: | :------------------------- |
+| Latest  | :white_check_mark: | Current stable release     |
+| < 1.0   | :x:                | Development / Deprecated   |
 
 ---
 
 ## 📄 Disclosure Policy
 
-We follow [responsible disclosure principles](https://en.wikipedia.org/wiki/Responsible_disclosure).
+We follow the principles of **Responsible Disclosure**:
 
-Upon confirmation of a vulnerability:
-1. We will acknowledge receipt within **48 hours**.
-2. We will investigate and validate the issue.
-3. We will prepare a patch and coordinate a release.
-4. You will be credited (if desired), and the fix will be disclosed publicly.
+1.  **Acknowledgement**: We will confirm receipt of your report within 2 business days.
+2.  **Investigation**: We will validate the vulnerability and determine its severity.
+3.  **Resolution**: We will work on a patch. We ask that you **do not disclose** the issue publicly until the fix has been released.
+4.  **Credit**: Once fixed, we will credit you for your discovery in the release notes (if desired).
 
 ---
 
-## 🧭 Security Best Practices
+## 🛡️ Security Best Practices
 
-We recommend users of this project:
-- Always use the **latest version**
-- Avoid using deprecated APIs or unstable branches
-- Review changelogs before upgrading
+For users of this project, we recommend:
+- Keeping the software up to date.
+- Reviewing the changelogs for security-related fixes.
+- Reporting any suspicious behavior immediately.
 
 ---
 
 ## 🤝 Acknowledgments
 
-We thank all contributors and security researchers who help improve this project.
-
-If you'd like to contribute to improving security, feel free to reach out or submit proposals.
-
+Thank you to all the security researchers and developers who help keep this project safe and secure.

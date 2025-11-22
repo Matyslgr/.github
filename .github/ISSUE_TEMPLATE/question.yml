@@ -24,7 +24,7 @@ body:
   - type: textarea
     id: context
     attributes:
-      label: 🔍 Additional Context
+      label: 📖 Context / Research
       description: >
         Provide any additional information that might be relevant to your question.
       placeholder: |

@@ -1,0 +1,40 @@
+# This is a template. Copy this file to the root of your project.
+# Fill in the brackets [ ] with your project details.
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+# 1. Project Metadata
+title: "[Project Name]"
+abstract: "[A brief description of what the software does]"
+version: 1.0.0
+date-released: 2025-01-01 # The release date of the version
+license: MIT # Common: MIT, Apache-2.0, GPL-3.0
+repository-code: "https://github.com/MatysLgr/[Repo-Name]"
+keywords:
+  - "web"
+  - "algorithm"
+  - "[keyword3]"
+
+# 2. Authors List
+authors:
+  - family-names: "Laguerre"
+    given-names: "Matys"
+    email: "matys.laguerre@epitech.eu"
+    # orcid: "https://orcid.org/0000-0000-0000-0000" # Optional: Researcher ID
+    affiliation: "Epitech"
+
+  # Add other contributors if working in a group
+  # - family-names: "[Last Name]"
+  #   given-names: "[First Name]"
+  #   email: "[Email]"
+  #   affiliation: "Epitech"
+
+# 3. (Optional) References / Citations
+# If your software is based on a paper or another work
+# references:
+#   - type: article
+#     title: "The Paper Title"
+#     authors:
+#       - family-names: "Doe"
+#         given-names: "John"
