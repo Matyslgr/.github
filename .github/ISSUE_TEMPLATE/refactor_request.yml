@@ -54,8 +54,8 @@ body:
         - Extract the validation logic into a dedicated helper.
         - Implement the Strategy Pattern to handle different user types.
         - Rename variables to be more explicit.
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: risk_analysis

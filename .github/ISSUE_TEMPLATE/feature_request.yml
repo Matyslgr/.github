@@ -8,7 +8,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in improving the project!
+        ### 💡 Feature Proposal
+        Thanks for helping us improve! Please fill out the sections below.
 
   - type: checkboxes
     id: prerequisites
@@ -20,14 +21,13 @@ body:
           required: true
 
   - type: textarea
-    id: problem
+    id: motivation
     attributes:
-      label: 😫 Problem Statement
-      description: Is your feature request related to a problem? Please describe.
+      label: ❓ Motivation (The "Why")
+      description: What problem are you trying to solve? Why is this change important?
       placeholder: |
-        - "I'm frustrated when..."
-        - "I cannot achieve X because..."
-        - "The current workflow is too slow when..."
+        - Current behavior: I cannot do X...
+        - Motivation: It forces me to do Y which is slow...
     validations:
       required: true
 

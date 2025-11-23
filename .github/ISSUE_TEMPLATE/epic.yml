@@ -37,7 +37,5 @@ body:
         - [ ] #42 (Link to an existing tracking issue)
         - [ ] Implement the main algorithm
         - [ ] Write documentation and unit tests
-      value: |
-        - [ ]
     validations:
       required: true
