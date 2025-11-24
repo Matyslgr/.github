@@ -1,6 +1,5 @@
 name: ♻️ Refactor Request
 description: Suggest code cleanup or architectural improvements.
-title: "[REFACTOR] : "
 labels: ["refactor"]
 assignees: []
 

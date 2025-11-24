@@ -1,6 +1,5 @@
 name: 🚀 Epic
 description: A large initiative or project milestone that groups multiple related issues.
-title: "[EPIC] : "
 labels: ["epic"]
 assignees: []
 
